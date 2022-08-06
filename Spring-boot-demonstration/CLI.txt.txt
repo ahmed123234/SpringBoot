@@ -1,0 +1,2 @@
+on the CLI apply the follwing command to run application.groovy 
+spring run application.groovy

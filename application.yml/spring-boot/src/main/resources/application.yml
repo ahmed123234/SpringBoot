@@ -1,0 +1,7 @@
+server:
+  port: 7070
+  servlet:
+    context-path: /home
+type: Framework
+tool: Spring Boot ${type}
+name: Ahmad
