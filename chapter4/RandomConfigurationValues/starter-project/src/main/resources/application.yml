@@ -1,0 +1,13 @@
+server:
+  port: 9090
+  
+my:
+  messageValue: ${random.int}
+  key: ${random.value}
+  
+spring:
+  profiles:
+    active:dev
+    - 
+
+
