@@ -4,7 +4,7 @@
 
 <h3> This guidance will help the beginners to get started with spring boot and understand its structure. <h3/>
 
-  <p>The guidance includes many sections as the follwing:</p>
+  <p>The guidance includes many sections as the following:</p>
 
 <p>Section 1: Introduction to Spring Boot.</p>
 <p>Section 2: Spring Manual Configuration.</p>
