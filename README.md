@@ -2,7 +2,10 @@
 
 <h1> Get Started with Spring Boot </h1>
 
-<h2> This guidance will help the beginners to get started with spring boot and understand its structure. <h2/>
+![spring-boot](https://user-images.githubusercontent.com/75845807/183748911-cea1a6d5-2e01-4a54-b646-5a4696511927.png)
+
+
+<h3> This guidance will help the beginners to get started with spring boot and understand its structure. <h3/>
   
 
   <p>The guidance includes many sections as the following:</p>
