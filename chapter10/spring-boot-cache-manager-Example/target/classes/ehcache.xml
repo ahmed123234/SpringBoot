@@ -1,0 +1,10 @@
+
+<!-- This xml file contains information for my caching provider "ehcache"-->
+<!-- maxEntriesLocalHeap: specify the maximum number of cache entries or
+bytes a cache can use in the local heap memory. -->
+<ehcache>
+    <cache name="price" maxEntriesLocalHeap="200"></cache>
+    <cache name="priceCache" maxEntriesLocalHeap="200"></cache>
+
+</ehcache>
+
