@@ -1,0 +1,15 @@
+2022-08-11 08:41:06.037  INFO 4472 --- [restartedMain] c.o.boot.SpringBootToolsApplication      : Starting SpringBootToolsApplication using Java 17.0.3 on DESKTOP-BSCBPEP with PID 4472 (C:\Users\aboud\Desktop\sts-workspace\spring-boot-tools\target\classes started by aboud in C:\Users\aboud\Desktop\sts-workspace\spring-boot-tools)
+2022-08-11 08:41:06.038  INFO 4472 --- [restartedMain] c.o.boot.SpringBootToolsApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-08-11 08:41:06.340  INFO 4472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-11 08:41:06.342  INFO 4472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-11 08:41:06.343  INFO 4472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-11 08:41:06.404  INFO 4472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-11 08:41:06.404  INFO 4472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
+2022-08-11 08:41:06.467 DEBUG 4472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-11 08:41:06.487 DEBUG 4472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-08-11 08:41:06.493 DEBUG 4472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-11 08:41:06.502 DEBUG 4472 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-11 08:41:06.530  INFO 4472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-11 08:41:06.549  INFO 4472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-11 08:41:06.564  INFO 4472 --- [restartedMain] c.o.boot.SpringBootToolsApplication      : Started SpringBootToolsApplication in 0.591 seconds (JVM running for 719.667)
+2022-08-11 08:41:06.566  INFO 4472 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
