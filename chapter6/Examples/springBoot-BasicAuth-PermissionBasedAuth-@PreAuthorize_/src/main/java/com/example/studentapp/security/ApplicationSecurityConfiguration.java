@@ -39,13 +39,13 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 // ToDO: Rule based Authentication
                 .antMatchers("/api/**").hasRole(STUDENT.name())
                 // ToDO: Permission based Authentication using antMatchers
-                .antMatchers(HttpMethod.DELETE,"/management/api/**")
-                .hasAuthority(COURSE_WRITE.getPermission())
-                .antMatchers(HttpMethod.POST,"/management/api/**")
-                .hasAuthority(COURSE_WRITE.getPermission())
-                .antMatchers(HttpMethod.PUT,"/management/api/**")
-                .hasAuthority(COURSE_WRITE.getPermission())
-                .antMatchers( HttpMethod.GET,"/management/api/**").hasAnyRole(ADMIN.name(),ADMIN_TRAINEE.name())
+//                 .antMatchers(HttpMethod.DELETE,"/management/api/**")
+//                 .hasAuthority(COURSE_WRITE.getPermission())
+//                 .antMatchers(HttpMethod.POST,"/management/api/**")
+//                 .hasAuthority(COURSE_WRITE.getPermission())
+//                 .antMatchers(HttpMethod.PUT,"/management/api/**")
+//                 .hasAuthority(COURSE_WRITE.getPermission())
+//                 .antMatchers( HttpMethod.GET,"/management/api/**").hasAnyRole(ADMIN.name(),ADMIN_TRAINEE.name())
                 .anyRequest().authenticated()
                 .and().httpBasic();
     }
