@@ -16,7 +16,7 @@ public class StudentManagementController {
     private StudentService studentService;
 
     @GetMapping
-    //@PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_ADMIN_TRAINEE')")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_ADMIN_TRAINEE')")
     // TODO: can take: hasRole('ROLE_'), hasAnyRole('ROLE_'), hasAuthority('permission'),hasAnyAuthority('permission')
     public List<Student> getAllStudents() {
 
@@ -24,7 +24,7 @@ public class StudentManagementController {
     }
 
     @PostMapping
-    //@PreAuthorize("hasAuthority('student:write')")
+    @PreAuthorize("hasAuthority('student:write')")
     public String registerNewStudent(@RequestBody Student student) {
         //       if(studentRepo.save(student).getStudentID()!=null)
        if (studentService.RegisterStudent(student).getStudentID()!= null)
@@ -34,7 +34,7 @@ public class StudentManagementController {
     }
 
     @DeleteMapping(path = "{studentId}")
-    //@PreAuthorize("hasAuthority('student:write')")
+    @PreAuthorize("hasAuthority('student:write')")
     public String deleteStudent(@PathVariable("studentId") Integer studentId) {
 
          //return studentService.deleteStudent(studentId);
@@ -42,14 +42,14 @@ public class StudentManagementController {
         return "deleted";
     }
 
-    //@PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_ADMIN_TRAINEE')")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_ADMIN_TRAINEE')")
     @GetMapping(path = "{Id}")
     public Student getStudentById(@PathVariable Integer Id){
        return studentService.findByStudentID(Id);
     }
 
     @PutMapping(path = "{studentId}")
-    //@PreAuthorize("hasAuthority('student:write')")
+    @PreAuthorize("hasAuthority('student:write')")
     public Student updateStudent(@PathVariable("studentId") Integer studentId, @RequestBody Student student) {
 
        return studentService.updateStudent(studentId,student);
