@@ -20,6 +20,8 @@
 <p>Section 8: Spring Data Support.</p>
 <p>Section 9: MongoDB Support.</p>
 <p>Section 10: Caching Support.</p>
+<p>Section 11: Boot Extras.</p>
+<p>Section 12: Other Support.</p>
 
 
 
