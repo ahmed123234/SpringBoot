@@ -1,0 +1,270 @@
+2022-08-13 13:40:52.904  INFO 19400 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 19400 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 13:40:52.910  INFO 19400 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 13:40:55.257  INFO 19400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 13:40:55.273  INFO 19400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 13:40:55.274  INFO 19400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 13:40:55.479  INFO 19400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 13:40:55.480  INFO 19400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2491 ms
+2022-08-13 13:40:56.825  INFO 19400 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-08-13 13:40:56.930  INFO 19400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 13:40:56.961  INFO 19400 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.824 seconds (JVM running for 6.242)
+2022-08-13 13:40:57.911  INFO 19400 --- [RMI TCP Connection(1)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 13:40:57.912  INFO 19400 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 13:40:57.917  INFO 19400 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-13 13:40:57.917  INFO 19400 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 13:40:58.145  INFO 19400 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 13:43:21.256  INFO 19400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 13:43:21.262  INFO 19400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 13:43:46.802  INFO 14028 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 14028 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 13:43:46.808  INFO 14028 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 13:43:49.220  INFO 14028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 13:43:49.237  INFO 14028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 13:43:49.238  INFO 14028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 13:43:49.402  INFO 14028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 13:43:49.403  INFO 14028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2514 ms
+2022-08-13 13:43:50.747  INFO 14028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-08-13 13:43:50.892  INFO 14028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 13:43:50.923  INFO 14028 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.871 seconds (JVM running for 6.409)
+2022-08-13 13:43:51.861  INFO 14028 --- [RMI TCP Connection(1)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 13:43:51.861  INFO 14028 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 13:43:51.864  INFO 14028 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 13:43:51.982  INFO 14028 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 13:43:52.287  INFO 14028 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:02:37.720  INFO 14028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:02:37.726  INFO 14028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:02:52.303  INFO 15088 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 15088 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:02:52.308  INFO 15088 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:02:54.806  INFO 15088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:02:54.822  INFO 15088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:02:54.823  INFO 15088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:02:54.984  INFO 15088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:02:54.984  INFO 15088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2604 ms
+2022-08-13 14:02:56.415  INFO 15088 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:02:56.641  INFO 15088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:02:56.670  INFO 15088 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 5.061 seconds (JVM running for 6.522)
+2022-08-13 14:02:57.853  INFO 15088 --- [RMI TCP Connection(2)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:02:57.853  INFO 15088 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:02:57.857  INFO 15088 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-13 14:02:57.864  INFO 15088 --- [RMI TCP Connection(3)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:02:58.094  INFO 15088 --- [RMI TCP Connection(3)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:27:59.350  INFO 15088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:27:59.354  INFO 15088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:28:14.186  INFO 7016 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 7016 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:28:14.191  INFO 7016 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:28:16.367  INFO 7016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:28:16.398  INFO 7016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:28:16.399  INFO 7016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:28:16.647  INFO 7016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:28:16.648  INFO 7016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2365 ms
+2022-08-13 14:28:17.646  INFO 7016 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:28:17.857  INFO 7016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:28:17.882  INFO 7016 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.587 seconds (JVM running for 7.974)
+2022-08-13 14:28:18.649  INFO 7016 --- [RMI TCP Connection(1)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:28:18.650  INFO 7016 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:28:18.653  INFO 7016 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-13 14:28:18.656  INFO 7016 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:28:19.044  INFO 7016 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:30:14.515  INFO 7016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:30:14.519  INFO 7016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:30:19.828  INFO 18396 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 18396 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:30:19.833  INFO 18396 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:30:21.657  INFO 18396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:30:21.666  INFO 18396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:30:21.667  INFO 18396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:30:21.769  INFO 18396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:30:21.770  INFO 18396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1866 ms
+2022-08-13 14:30:22.692  INFO 18396 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 0 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:30:22.850  INFO 18396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:30:22.874  INFO 18396 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 3.689 seconds (JVM running for 4.957)
+2022-08-13 14:30:23.276  INFO 18396 --- [RMI TCP Connection(2)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:30:23.277  INFO 18396 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:30:23.278  INFO 18396 --- [RMI TCP Connection(1)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:30:23.280  INFO 18396 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 14:30:23.472  INFO 18396 --- [RMI TCP Connection(1)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:32:32.479  INFO 18396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:32:32.485  INFO 18396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:32:37.126  INFO 17032 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 17032 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:32:37.131  INFO 17032 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:32:39.175  INFO 17032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:32:39.187  INFO 17032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:32:39.188  INFO 17032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:32:39.330  INFO 17032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:32:39.330  INFO 17032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2135 ms
+2022-08-13 14:32:40.212  INFO 17032 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:32:40.429  INFO 17032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:32:40.449  INFO 17032 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.133 seconds (JVM running for 5.383)
+2022-08-13 14:32:41.365  INFO 17032 --- [RMI TCP Connection(4)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:32:41.365  INFO 17032 --- [RMI TCP Connection(4)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:32:41.368  INFO 17032 --- [RMI TCP Connection(4)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 14:32:41.368  INFO 17032 --- [RMI TCP Connection(5)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:32:41.524  INFO 17032 --- [RMI TCP Connection(5)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:34:42.870  INFO 17032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:34:42.873  INFO 17032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:34:48.340  INFO 7352 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 7352 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:34:48.346  INFO 7352 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:34:50.316  INFO 7352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:34:50.326  INFO 7352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:34:50.327  INFO 7352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:34:50.448  INFO 7352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:34:50.448  INFO 7352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2027 ms
+2022-08-13 14:34:51.336  INFO 7352 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:34:51.493  INFO 7352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:34:51.513  INFO 7352 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 3.867 seconds (JVM running for 5.178)
+2022-08-13 14:34:52.053  INFO 7352 --- [RMI TCP Connection(1)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:34:52.194  INFO 7352 --- [RMI TCP Connection(1)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:34:52.490  INFO 7352 --- [RMI TCP Connection(3)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:34:52.490  INFO 7352 --- [RMI TCP Connection(3)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:34:52.492  INFO 7352 --- [RMI TCP Connection(3)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 14:35:19.329  INFO 7352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:35:19.333  INFO 7352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:35:26.557  INFO 1612 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 1612 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:35:26.562  INFO 1612 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:35:28.507  INFO 1612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:35:28.516  INFO 1612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:35:28.517  INFO 1612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:35:28.617  INFO 1612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:35:28.617  INFO 1612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1984 ms
+2022-08-13 14:35:29.509  INFO 1612 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:35:29.669  INFO 1612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:35:29.687  INFO 1612 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 3.836 seconds (JVM running for 5.332)
+2022-08-13 14:35:30.104  INFO 1612 --- [RMI TCP Connection(2)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:35:30.104  INFO 1612 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:35:30.107  INFO 1612 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 14:35:30.109  INFO 1612 --- [RMI TCP Connection(1)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:35:30.303  INFO 1612 --- [RMI TCP Connection(1)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:35:46.238  INFO 1612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:35:46.242  INFO 1612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:35:51.387  INFO 18180 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 18180 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:35:51.392  INFO 18180 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:35:53.237  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:35:53.248  INFO 18180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:35:53.249  INFO 18180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:35:53.355  INFO 18180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:35:53.355  INFO 18180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1893 ms
+2022-08-13 14:35:54.335  INFO 18180 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:35:54.528  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:35:54.595  INFO 18180 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.003 seconds (JVM running for 5.226)
+2022-08-13 14:35:55.363  INFO 18180 --- [RMI TCP Connection(1)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:35:55.363  INFO 18180 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:35:55.366  INFO 18180 --- [RMI TCP Connection(1)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 14:35:55.364  INFO 18180 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:35:55.521  INFO 18180 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:45:30.851  INFO 18180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:45:30.855  INFO 18180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:45:36.404  INFO 16476 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 16476 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:45:36.410  INFO 16476 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:45:38.739  INFO 16476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:45:38.756  INFO 16476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:45:38.757  INFO 16476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:45:38.880  INFO 16476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:45:38.881  INFO 16476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2388 ms
+2022-08-13 14:45:39.989  INFO 16476 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:45:40.191  INFO 16476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:45:40.214  INFO 16476 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.456 seconds (JVM running for 5.746)
+2022-08-13 14:45:41.042  INFO 16476 --- [RMI TCP Connection(3)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:45:41.044  INFO 16476 --- [RMI TCP Connection(3)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:45:41.046  INFO 16476 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:45:41.052  INFO 16476 --- [RMI TCP Connection(3)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-08-13 14:45:41.244  INFO 16476 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:47:52.067  INFO 16476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:47:52.071  INFO 16476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:47:56.920  INFO 18752 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 18752 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:47:56.925  INFO 18752 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:47:58.849  INFO 18752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:47:58.860  INFO 18752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:47:58.860  INFO 18752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:47:58.969  INFO 18752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:47:58.969  INFO 18752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1965 ms
+2022-08-13 14:47:59.849  INFO 18752 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:48:00.025  INFO 18752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:48:00.056  INFO 18752 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 3.881 seconds (JVM running for 5.111)
+2022-08-13 14:48:00.912  INFO 18752 --- [RMI TCP Connection(2)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:48:00.913  INFO 18752 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:48:00.915  INFO 18752 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 14:48:00.914  INFO 18752 --- [RMI TCP Connection(3)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:48:01.071  INFO 18752 --- [RMI TCP Connection(3)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:49:52.727  INFO 18752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:49:52.731  INFO 18752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:49:58.945  INFO 8884 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 8884 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:49:58.956  INFO 8884 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:50:01.339  INFO 8884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:50:01.349  INFO 8884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:50:01.350  INFO 8884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:50:01.473  INFO 8884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:50:01.473  INFO 8884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2437 ms
+2022-08-13 14:50:02.345  INFO 8884 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 0 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:50:02.499  INFO 8884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:50:02.517  INFO 8884 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.375 seconds (JVM running for 5.651)
+2022-08-13 14:50:02.892  INFO 8884 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:50:02.892  INFO 8884 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:50:02.895  INFO 8884 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 14:50:03.191  INFO 8884 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:50:03.333  INFO 8884 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 14:50:24.134  INFO 8884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 14:50:24.138  INFO 8884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 14:50:28.606  INFO 12480 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 12480 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 14:50:28.612  INFO 12480 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 14:50:30.690  INFO 12480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 14:50:30.703  INFO 12480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 14:50:30.703  INFO 12480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 14:50:30.862  INFO 12480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 14:50:30.863  INFO 12480 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2174 ms
+2022-08-13 14:50:31.950  INFO 12480 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-13 14:50:32.131  INFO 12480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 14:50:32.149  INFO 12480 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 4.255 seconds (JVM running for 5.554)
+2022-08-13 14:50:32.950  INFO 12480 --- [RMI TCP Connection(2)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 14:50:32.951  INFO 12480 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 14:50:32.954  INFO 12480 --- [RMI TCP Connection(2)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-13 14:50:32.953  INFO 12480 --- [RMI TCP Connection(3)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 14:50:33.167  INFO 12480 --- [RMI TCP Connection(3)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 15:14:46.988  INFO 12480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 15:14:46.993  INFO 12480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 15:14:56.536  INFO 11752 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 11752 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 15:14:56.542  INFO 11752 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 15:14:59.118  INFO 11752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 15:14:59.134  INFO 11752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 15:14:59.135  INFO 11752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 15:14:59.302  INFO 11752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 15:14:59.302  INFO 11752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2685 ms
+2022-08-13 15:15:00.787  INFO 11752 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-13 15:15:01.023  INFO 11752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 15:15:01.055  INFO 11752 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 5.256 seconds (JVM running for 6.704)
+2022-08-13 15:15:02.243  INFO 11752 --- [RMI TCP Connection(3)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 15:15:02.243  INFO 11752 --- [RMI TCP Connection(3)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 15:15:02.247  INFO 11752 --- [RMI TCP Connection(3)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-13 15:15:02.246  INFO 11752 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 15:15:02.455  INFO 11752 --- [RMI TCP Connection(2)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 15:15:51.145  INFO 11752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 15:15:51.150  INFO 11752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 15:16:04.006  INFO 13076 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 13076 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 15:16:04.011  INFO 13076 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 15:16:06.704  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 15:16:06.723  INFO 13076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 15:16:06.724  INFO 13076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 15:16:06.886  INFO 13076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 15:16:06.886  INFO 13076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2800 ms
+2022-08-13 15:16:08.504  INFO 13076 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-13 15:16:08.804  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 15:16:08.835  INFO 13076 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 5.565 seconds (JVM running for 7.133)
+2022-08-13 15:16:10.055  INFO 13076 --- [RMI TCP Connection(4)-192.168.141.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 15:16:10.056  INFO 13076 --- [RMI TCP Connection(4)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 15:16:10.059  INFO 13076 --- [RMI TCP Connection(4)-192.168.141.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-13 15:16:10.126  INFO 13076 --- [RMI TCP Connection(5)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 15:16:10.358  INFO 13076 --- [RMI TCP Connection(5)-192.168.141.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-13 15:17:01.799  INFO 13076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-13 15:17:01.805  INFO 13076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-13 15:17:15.218  INFO 2792 --- [main] c.e.s.SpringActuatorApplication          : Starting SpringActuatorApplication using Java 1.8.0_322 on DESKTOP-BSCBPEP with PID 2792 (C:\Users\aboud\Idea\springActuator\target\classes started by aboud in C:\Users\aboud\Idea\springActuator)
+2022-08-13 15:17:15.224  INFO 2792 --- [main] c.e.s.SpringActuatorApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-13 15:17:17.867  INFO 2792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-13 15:17:17.883  INFO 2792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-13 15:17:17.884  INFO 2792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-13 15:17:18.081  INFO 2792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-13 15:17:18.081  INFO 2792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2774 ms
+2022-08-13 15:17:19.622  INFO 2792 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-13 15:17:19.866  INFO 2792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-13 15:17:19.897  INFO 2792 --- [main] c.e.s.SpringActuatorApplication          : Started SpringActuatorApplication in 5.457 seconds (JVM running for 7.195)
+2022-08-13 15:17:20.290  INFO 2792 --- [http-nio-9090-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-13 15:17:20.291  INFO 2792 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-13 15:17:20.294  INFO 2792 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-13 15:17:20.408  INFO 2792 --- [http-nio-9090-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-13 15:17:20.652  INFO 2792 --- [http-nio-9090-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
