@@ -1,0 +1,37 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+#    cors:
+#      allowed-methods: GET, POST
+#      allowed-headers: Authorization
+#    path: /car
+
+
+  datasource:
+    password: 201712455@Asg
+    url: jdbc:mysql://localhost:3306/graphql
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show_sql: true
+    open-in-view: false
+
+logging:
+  level:
+    sql: debug
+
+

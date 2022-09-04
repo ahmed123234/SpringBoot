@@ -1,0 +1,49 @@
+type Query {
+    carByAvailable(status: String!): [Car]
+    carByPrice(process: CostProcess!): [Car]
+    cars: [Car]
+    carById(id: ID!): Car
+    carByStatus(status: String!): [Car]
+    carByMark(mark: String!): Car
+    carByClass(class: String!): [Car]
+    carByModel(model: String!): [Car]
+    carByCost(cost: Float!): [Car]
+    carByCostGrater(cost: Float!): [Car]
+    carByCostLess(cost: Float!): [Car]
+}
+
+input CostProcess{
+    cost: Float!
+    operation: String!
+}
+
+type Mutation {
+    addCar(car: CarInput): String
+    addNewCar(car: CarInput): Car
+    updateCost(id: ID!, cost: Float!): String
+    updatePrices(coefficient: Float!): String
+    deleteCarById(id: ID!): String
+    updateCarMark( id: ID, car: CarInput): String
+    updateCarFeatures(id: ID!, car: CarInput): String
+    updateCarStatus(id: ID!, status: String): String
+
+}
+
+input CarInput{
+    carClass: String
+    model: String
+    cost: Float
+    mark: String
+    status: String
+}
+
+
+type Car {
+    carId: ID!
+    carClass: String
+    carModel: String
+    carMark: String
+    carCost: Float
+    carStatus: String
+}
+
