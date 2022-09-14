@@ -87,7 +87,7 @@ public class OrderController {
                 if (appUserRepository.findByUsername(username).isPresent()) {
                     userId = appUserRepository.findByUsername(username).get().getUserId();
 
-                    if (rentOrderServiceImpl.getUSerOrders(userId).isEmpty()) {
+                    if (rentOrderServiceImpl.getUserOrders(userId).isEmpty()) {
                         ObjectNode objectNode = new ObjectMapper().createObjectNode();
                         objectNode.put("message", "Sorry, you have not any order yet.");
                         response = ResponseEntity.ok().body(new RestResponse(
@@ -96,7 +96,7 @@ public class OrderController {
                                 ZonedDateTime.now(ZoneId.of("Z"))
                         ));
                     } else
-                        response = ResponseEntity.ok().body(rentOrderServiceImpl.getUSerOrders(userId));
+                        response = ResponseEntity.ok().body(rentOrderServiceImpl.getUserOrders(userId));
                 }
             } catch (Exception exception) {
                 log.error("error {}", exception.getMessage());
@@ -140,7 +140,7 @@ public class OrderController {
 
                 username = appUserServiceImpl.handleAuthorizationHeader(authorizationHeader);
                 Long userId = appUserRepository.findAppUserByUsername(username).getUserId();
-                isFound = rentOrderServiceImpl.getUSerOrders(userId).contains(rentOrderServiceImpl.getOrderById(orderId));
+                isFound = rentOrderServiceImpl.getUserOrders(userId).contains(rentOrderServiceImpl.getOrderById(orderId));
             } catch (Exception exception) {
                 log.error("error {}", exception.getMessage());
             }

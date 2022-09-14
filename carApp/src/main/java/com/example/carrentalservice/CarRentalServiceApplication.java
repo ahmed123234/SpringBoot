@@ -29,78 +29,78 @@ public class CarRentalServiceApplication {
     }
 
 
-    @Bean
-    @Order(value = 2)
-    CommandLineRunner run(AppUserServiceImpl userService) {
-        return args -> {
-            userService.saveRole(new UserRole(null, "ROLE_USER"));
-            userService.saveRole(new UserRole(null, "ROLE_MANAGER"));
-            userService.saveRole(new UserRole(null, "ROLE_ADMIN"));
-            userService.saveRole(new UserRole(null, "ROLE_SUPER_ADMIN"));
-
-
-            userService.saveUser(new AppUser("ali", "fares", "ali@gmail.com",
-                    "ali12", "201712@Asg",new ArrayList<>()));
-
-            userService.saveUser(new AppUser("ahmad", "sameer", "ahmad@gmail.com",
-                    "ahmad12", "201712@Asg",new ArrayList<>()));
-
-            userService.saveUser(new AppUser("akram", "ali", "akram@gmail.com",
-                    "akram12", "201712@Asg",new ArrayList<>()));
-
-            userService.saveUser(new AppUser("anwar", "ali", "anwar@gmail.com",
-                    "anwar12", "201712@Asg",new ArrayList<>()));
-
-
-            userService.addRoleToUser("ahmad@gmail.com", "ROLE_USER");
-            userService.addRoleToUser("ahmad@gmail.com", "ROLE_MANAGER");
-            userService.addRoleToUser("ali@gmail.com", "ROLE_MANAGER");
-            userService.addRoleToUser("akram@gmail.com", "ROLE_ADMIN");
-            userService.addRoleToUser("anwar@gmail.com", "ROLE_SUPER_ADMIN");
-            userService.addRoleToUser("anwar@gmail.com", "ROLE_ADMIN");
-            userService.addRoleToUser("anwar@gmail.com", "ROLE_USER");
-
-        };
-    }
-
-    @Bean
-    @Order(value = 1)
-    CommandLineRunner runner (CarServiceImpl carService) {
-        return args -> {
-            carService.addCar(new Car("class A", "Skoda", (long) 140.15,
-                    "PS12TU2346","Available"));
-            carService.addCar(new Car("class A", "Skoda", (long) 140.15,
-                    "PS12TU2341","Available"));
-            carService.addCar(new Car("class A", "Skoda", (long) 150.15,
-                    "PS12TU2343","Available"));
-            carService.addCar(new Car("class B", "Fiat", (long) 50.50,
-                    "PS12TU2345","Available"));
-            carService.addCar(new Car("class A", "Fiat", (long) 100.50,
-                    "PS12TU2348","Available"));
-            carService.addCar(new Car("class A", "Kia", (long) 110.15,
-                    "PS12TU2349","Available"));
-            carService.addCar(new Car("class A", "Kia", (long) 120.60,
-                    "PS12TU2340","Available"));
-            carService.addCar(new Car("class C", "Kia", (long) 60.60,
-                    "PS12TU2347","Available"));
-
-        };
-    }
-
-
-    @Bean
-    @Order(value = 3)
-    CommandLineRunner lineRunner (RentOrderServiceImpl orderService) {
-        return args -> {
-            orderService.createOrder("ahmad12", new RentOrderRequest("yes",
-                    Date.valueOf("2022-08-31"), Date.valueOf("2022-09-11")), new Long[] {2L, 4L});
-            orderService.createOrder("ahmad12", new RentOrderRequest("yes",
-                    Date.valueOf("2022-08-31"),Date.valueOf("2022-09-11")), new Long[] {5L});
-            orderService.createOrder("ahmad12", new RentOrderRequest("yes",
-                    Date.valueOf("2022-08-31"),Date.valueOf("2022-09-11")), new Long[] {5L});
-
-        };
-    }
+//    @Bean
+//    @Order(value = 2)
+//    CommandLineRunner run(AppUserServiceImpl userService) {
+//        return args -> {
+//            userService.saveRole(new UserRole(null, "ROLE_USER"));
+//            userService.saveRole(new UserRole(null, "ROLE_MANAGER"));
+//            userService.saveRole(new UserRole(null, "ROLE_ADMIN"));
+//            userService.saveRole(new UserRole(null, "ROLE_SUPER_ADMIN"));
+//
+//
+//            userService.saveUser(new AppUser("ali", "fares", "ali@gmail.com",
+//                    "ali12", "201712@Asg",new ArrayList<>()));
+//
+//            userService.saveUser(new AppUser("ahmad", "sameer", "ahmad@gmail.com",
+//                    "ahmad12", "201712@Asg",new ArrayList<>()));
+//
+//            userService.saveUser(new AppUser("akram", "ali", "akram@gmail.com",
+//                    "akram12", "201712@Asg",new ArrayList<>()));
+//
+//            userService.saveUser(new AppUser("anwar", "ali", "anwar@gmail.com",
+//                    "anwar12", "201712@Asg",new ArrayList<>()));
+//
+//
+//            userService.addRoleToUser("ahmad@gmail.com", "ROLE_USER");
+//            userService.addRoleToUser("ahmad@gmail.com", "ROLE_MANAGER");
+//            userService.addRoleToUser("ali@gmail.com", "ROLE_MANAGER");
+//            userService.addRoleToUser("akram@gmail.com", "ROLE_ADMIN");
+//            userService.addRoleToUser("anwar@gmail.com", "ROLE_SUPER_ADMIN");
+//            userService.addRoleToUser("anwar@gmail.com", "ROLE_ADMIN");
+//            userService.addRoleToUser("anwar@gmail.com", "ROLE_USER");
+//
+//        };
+//    }
+//
+//    @Bean
+//    @Order(value = 1)
+//    CommandLineRunner runner (CarServiceImpl carService) {
+//        return args -> {
+//            carService.addCar(new Car("class A", "Skoda", (long) 140.15,
+//                    "PS12TU2346","Available"));
+//            carService.addCar(new Car("class A", "Skoda", (long) 140.15,
+//                    "PS12TU2341","Available"));
+//            carService.addCar(new Car("class A", "Skoda", (long) 150.15,
+//                    "PS12TU2343","Available"));
+//            carService.addCar(new Car("class B", "Fiat", (long) 50.50,
+//                    "PS12TU2345","Available"));
+//            carService.addCar(new Car("class A", "Fiat", (long) 100.50,
+//                    "PS12TU2348","Available"));
+//            carService.addCar(new Car("class A", "Kia", (long) 110.15,
+//                    "PS12TU2349","Available"));
+//            carService.addCar(new Car("class A", "Kia", (long) 120.60,
+//                    "PS12TU2340","Available"));
+//            carService.addCar(new Car("class C", "Kia", (long) 60.60,
+//                    "PS12TU2347","Available"));
+//
+//        };
+//    }
+//
+//
+//    @Bean
+//    @Order(value = 3)
+//    CommandLineRunner lineRunner (RentOrderServiceImpl orderService) {
+//        return args -> {
+//            orderService.createOrder("ahmad12", new RentOrderRequest("yes",
+//                    Date.valueOf("2022-08-31"), Date.valueOf("2022-09-11")), new Long[] {2L, 4L});
+//            orderService.createOrder("ahmad12", new RentOrderRequest("yes",
+//                    Date.valueOf("2022-08-31"),Date.valueOf("2022-09-11")), new Long[] {5L});
+//            orderService.createOrder("ahmad12", new RentOrderRequest("yes",
+//                    Date.valueOf("2022-08-31"),Date.valueOf("2022-09-11")), new Long[] {5L});
+//
+//        };
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(CarRentalServiceApplication.class, args);

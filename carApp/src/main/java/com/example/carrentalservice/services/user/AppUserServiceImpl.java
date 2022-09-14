@@ -41,6 +41,7 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
 
     private final PasswordEncoder passwordEncoder;
     private final ConfirmationTokenService confirmationTokenService;
+
 //    private  final RegistrationValidation registrationValidation;
 
 //
@@ -187,8 +188,6 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
     public void createNewUserAfterOAuthLoginSuccess(String email, String firstName,
                                                     String lastName, AuthenticationProvider provider) {
 
-        //List<UserRole> roles = new ArrayList<>();
-        //roles.add(new UserRole(null, "ROLE_CUSTOMER"));
         AppUser appUser = new AppUser();
         appUser.setEmail(email);
         appUser.setFirstName(firstName);
@@ -200,14 +199,15 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
         appUserRepository.save(appUser);
         appUser.getRoles().add(addRoleToUser(email, "ROLE_CUSTOMER"));
         log.info("the user {} signup using google, and saved in database successfully", appUser.getUsername());
-
     }
+
     @Override
     public void updateUserInfo(String email, AuthenticationProvider provider) {
         if (appUserRepository.findByEmail(email) != null) {
             appUserRepository.updateAppUserInfo(email, provider);
             log.info("the user with email {}, logged in by google, " +
                     "and his authentication provider is changed to {}", email, provider);
+
         }else {
             log.error("No such user with email : {}", email);
             throw new ApiRequestException("No such user with email: " + email);
@@ -229,6 +229,15 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
         if (user != null) {
             log.info("user with name: {} is valid , " +
                             "the changing status process is in progress",  username);
+
+            boolean state = status.equalsIgnoreCase("enabled");
+            appUserRepository.updateStatus(username, state);
+
+            if (state) {
+                statusDescription = "Enabled";
+            } else statusDescription = "Disabled";
+            log.info("User {} is {} successfully", username, statusDescription);
+            return "The user with username " + username + " is successfully " + statusDescription;
         }
         else {
             log.info("no such user with name: {} " +
@@ -236,14 +245,6 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
             throw  new ApiRequestException("no such user with username: " + username +
                     " the changing status process is failed");
         }
-        boolean state = status.equalsIgnoreCase("enabled");
-        appUserRepository.updateStatus(username, state);
-
-        if (state) {
-                statusDescription = "Enabled";
-        } else statusDescription = "Disabled";
-        log.info("User {} is {} successfully", username, statusDescription);
-        return "The user with username " + username + " is successfully " + statusDescription;
     }
 
 
@@ -274,37 +275,39 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
     }
 
     @Override
-    public void addUser(@NotNull RegistrationRequest registrationRequest) {
+    public String addUser(@NotNull RegistrationRequest registrationRequest) {
 
-//        registrationValidation.validateUserInfo(registrationRequest.getEmail(),
-//                registrationRequest.getUserName(), registrationRequest.getPassword());
+        AppUser appUser;
 
-        checkEmail(registrationRequest.getEmail());
-        checkUsername(registrationRequest.getUserName());
-        AppUser appUser = new AppUser(
-                registrationRequest.getFirstName(),
-                registrationRequest.getLastName(),
-                registrationRequest.getEmail(),
-                registrationRequest.getUserName(),
-                registrationRequest.getPassword()
-        );
+        if (appUserRepository.findByEmail(registrationRequest.getEmail()) == null &&
+                appUserRepository.findAppUserByUsername(registrationRequest.getUserName() )== null) {
+            appUser = new AppUser(
+                    registrationRequest.getFirstName(),
+                    registrationRequest.getLastName(),
+                    registrationRequest.getEmail(),
+                    registrationRequest.getUserName(),
+                    registrationRequest.getPassword()
+            );
 
-        appUser.setEnabled(true);
-        saveUser(appUser);
-        for (String role: registrationRequest.getRoles()
-        ) {
-           addRoleToUser(registrationRequest.getEmail(), role);
+            appUser.setEnabled(true);
+            appUserRepository.save(appUser);
 
+//            for (String role : registrationRequest.getRoles()) {
+//                addRoleToUser(registrationRequest.getEmail(), role);
+//            }
+            return "User added successfully";
         }
-
+        else throw new ApiRequestException("User with given email or username is already found." +
+                " Try again with new email/username", HttpStatus.BAD_REQUEST);
     }
+
     @Override
     public Long getUserId (String username) {
 
         boolean isFound = appUserRepository.findByUsername(username).isPresent();
         if (!isFound) {
             log.error("User  with username: {} not found in the database", username);
-            return null;
+            throw new ApiRequestException("no such user with the given username: " + username);
         }
         return appUserRepository.findByUsername(username).get().getUserId();
     }
@@ -313,10 +316,10 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
     public String updateUserPassword(@NotNull String username, @NotNull String password) {
 
 //        registrationValidation.validateUserInfo(null, username, password);
-        String encodedPassword = passwordEncoder.bCryptPasswordEncoder().encode(password);
+//        String encodedPassword = passwordEncoder.bCryptPasswordEncoder().encode(password);
 
         System.out.println("new password is " + password);
-        int affected = appUserRepository.updateUserPassword(username, encodedPassword);
+        int affected = appUserRepository.updateUserPassword(username, password);
 
         if (affected == 1) {
             log.info("Update password to user: {} to be {}", username, password);
@@ -350,13 +353,13 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
     }
 
     @Override
-    public UserRole saveRole(UserRole role) {
+    public UserRole saveRole(@NotNull UserRole role) {
         log.info("saving new role {} to the database", role.getName());
         return userRoleRepository.save(role);
     }
 
     @Override
-    public AppUser saveUser(AppUser user) {
+    public AppUser saveUser(@NotNull AppUser user) {
         log.info("saving new user {} to the database", user.getUsername());
         user.setPassword(passwordEncoder.bCryptPasswordEncoder().encode(user.getPassword()));
         return appUserRepository.save(user);
@@ -368,7 +371,7 @@ public class AppUserServiceImpl implements UserDetailsService, AppUserService {
 
         if (user == null) {
             log.error("No such user with email:{} ", email);
-            throw new ApiRequestException("No such user with email: " + email);
+            throw new ApiRequestException("No such user with email: " + email + ". Process failed");
         }
 
         UserRole role = userRoleRepository.findByName(roleName);

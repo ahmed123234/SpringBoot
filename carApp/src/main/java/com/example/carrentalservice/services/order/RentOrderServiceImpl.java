@@ -45,7 +45,7 @@ public class RentOrderServiceImpl implements RentOrderService {
     }
 
     @Override
-    public String createOrder (String username, RentOrderRequest rentOrderRequest, Long [] carId) {
+    public String createOrder (String username, @NotNull RentOrderRequest rentOrderRequest, Long [] carId) {
 
         String message;
         List<Long> carsId = new ArrayList<>();
@@ -91,7 +91,7 @@ public class RentOrderServiceImpl implements RentOrderService {
     }
 
     @Override
-    public List<RentOrder> getUSerOrders(Long userId) {
+    public List<RentOrder> getUserOrders(Long userId) {
 
         return rentOrderRepository.findAllByUserId(userId);
     }

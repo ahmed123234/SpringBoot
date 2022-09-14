@@ -12,7 +12,7 @@ public interface RentOrderService {
 
     String createOrder (String username, RentOrderRequest rentOrderRequest, Long [] carId);
 
-    List<RentOrder> getUSerOrders(Long userId);
+    List<RentOrder> getUserOrders(Long userId);
 
     RentOrder getOrderById(Long orderId);
 

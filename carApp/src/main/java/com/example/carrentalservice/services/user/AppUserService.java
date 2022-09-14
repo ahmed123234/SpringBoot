@@ -37,7 +37,7 @@ public interface AppUserService {
 
     String deleteUser (String username);
 
-    void addUser(RegistrationRequest registrationRequest);
+    String addUser(RegistrationRequest registrationRequest);
 
     Long getUserId(String username);
 

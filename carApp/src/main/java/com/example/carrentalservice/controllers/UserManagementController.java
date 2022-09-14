@@ -150,10 +150,10 @@ public class UserManagementController {
     @PostMapping("/add")
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public RestResponse addAppUser(@RequestBody RegistrationRequest registrationRequest) {
-        appUserService.addUser(registrationRequest);
+
 
         ObjectNode objectNode = new ObjectMapper().createObjectNode();
-        objectNode.put("message", "User added successfully");
+        objectNode.put("message", appUserService.addUser(registrationRequest));
 
         return new RestResponse(
                 objectNode,
